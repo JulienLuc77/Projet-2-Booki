@@ -230,11 +230,12 @@ a{
     color: white;
 }
 body {
-    margin-right: 80px;
-    margin-left: -35px;
-    height: 1722.02px;
     min-width: 320px;
     max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .main-container {
     width: 100%;
