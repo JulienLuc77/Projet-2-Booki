@@ -1,4 +1,4 @@
-@media (max-width: 1440px){
+
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
@@ -473,7 +473,6 @@ body {
 }
 .text-right {
     margin-left: 300px
-}
 }
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
