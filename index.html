@@ -22,14 +22,14 @@
               crossorigin="anonymous"
               referrerpolicy="no-referrer">
         
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="./css/style.css">
     </head>
 
     <body>
         <div class="main-container">
             <header>
                 <img src="images/Booki.png" alt="logo du site" class="logo_Booki">
-                <nav class="boutons_menu">
+                <div class="boutons_menu">
                     <div class="link-menu">
                         <a href="#section1" class="link-section">
                             Hébergements
@@ -40,88 +40,88 @@
                             Activités
                         </a>
                     </div>
-                </nav>
+                </div>
             </header>
+            <nav>
+                <div>
+                    <h1 class="titre_principal">
+                        Trouvez votre hébergement pour des vacances de rêve
+                    </h1>
+                    <p class="subtitle">
+                        En plein centre-ville ou en pleine nature
+                    </p>
+                </div>
 
-            <div>
-                <h1 class="titre_principal">
-                    Trouvez votre hébergement pour des vacances de rêve
-                </h1>
-                <p class="subtitle">
-                    En plein centre-ville ou en pleine nature
-                </p>
-            </div>
-
-            <nav class="barre_recherche_localisation">
-                <div class="color-square">
-                    <div class="logo-local"><i class="fa-solid fa-location-dot color-black"></i>
+                <div class="barre_recherche_localisation">
+                    <div class="color-square">
+                        <div class="logo-local"><i class="fa-solid fa-location-dot color-black"></i>
+                        </div>
+                    </div>
+                    <form action="#">
+                        <div class="search-container">
+                            <input type="text" class="search-container2 bold" name="search" placeholder="Marseille, France">
+                        </div>
+                    </form>
+                    <div class="color-square-2">
+                    <a href="#">
+                        <p class="word-search bold">
+                            Rechercher
+                        </p>   
+                        <i class="fa-solid fa-magnifying-glass logo-mobile color-white"></i>
+                    </a>
                     </div>
                 </div>
-                <form action="#">
-                    <div class="search-container">
-                        <input type="text" class="search-container2 bold" name="search" placeholder="Marseille, France">
-                    </div>
-                </form>
-                <div class="color-square-2">
-                <a href="#">
-                    <p class="word-search bold">
-                        Rechercher
-                    </p>   
-                    <i class="fa-solid fa-magnifying-glass logo-mobile color-white"></i>
-                </a>
-                </div>
-            </nav>
 
-            <div class="filter">
-                <p class="word-filter bold">
-                    Filtres
-                </p>
-                <nav class="container">
-                    <div class="filter-button">
-                        <div class="logo-money">
-                            <i class="fa-solid fa-money-bill-wave color-blue"></i>
+                <div class="filter">
+                    <p class="word-filter bold">
+                        Filtres
+                    </p>
+                    <div class="container">
+                        <div class="filter-button">
+                            <div class="logo-money">
+                                <i class="fa-solid fa-money-bill-wave color-blue"></i>
+                            </div>
+                            <p class="filter-contenant bold">
+                                Économique
+                            </p>
                         </div>
-                        <p class="filter-contenant bold">
-                            Économique
+                        <div class="filter-button">
+                            <div class="logo-person">
+                                <i class="fa-solid fa-person color-blue"></i>
+                            </div>
+                            <p class="filter-contenant bold">
+                                Familial
+                            </p>
+                        </div>
+                        <div class="filter-button">
+                            <div class="heart-logo">
+                                <i class="fa-solid fa-heart color-blue"></i>
+                            </div>
+                            <p class="filter-contenant bold">
+                                Romantique
+                            </p>
+                        </div>
+                        <div class="filter-button">
+                            <div class="fire-logo">
+                                <i class="fa-solid fa-fire color-blue"></i>
+                            </div>
+                            <p class="filter-contenant bold">
+                                Nos pépites
+                            </p>
+                        </div>
+                    </div>
+                </div>     
+                    <div class="information-line">
+                        <div class="information">
+                            <div class="logo-information">
+                                <i class="fa-solid fa-info color-blue"></i>
+                            </div>             
+                        </div>
+                        <p class="text-information">
+                            Plus de 500 logements sont disponibles dans cette ville
                         </p>
                     </div>
-                    <div class="filter-button">
-                        <div class="logo-person">
-                            <i class="fa-solid fa-person color-blue"></i>
-                        </div>
-                        <p class="filter-contenant bold">
-                            Familial
-                        </p>
-                    </div>
-                    <div class="filter-button">
-                        <div class="heart-logo">
-                            <i class="fa-solid fa-heart color-blue"></i>
-                        </div>
-                        <p class="filter-contenant bold">
-                            Romantique
-                        </p>
-                    </div>
-                    <div class="filter-button">
-                        <div class="fire-logo">
-                            <i class="fa-solid fa-fire color-blue"></i>
-                        </div>
-                        <p class="filter-contenant bold">
-                            Nos pépites
-                        </p>
-                    </div>
-                </nav>
-            </div>     
-            <div class="information-line">
-                <div class="information">
-                    <div class="logo-information">
-                        <i class="fa-solid fa-info color-blue"></i>
-                    </div>             
-                </div>
-                <p class="text-information">
-                    Plus de 500 logements sont disponibles dans cette ville
-                </p>
-            </div>
-                
+            </nav>   
             <main>
                 <div class="hebergements-and-populaires">
                     <div class="background">   
@@ -131,7 +131,7 @@
                                     Hébergements à Marseille
                                 </h2>
                                 
-                                    <nav class="line-pictures">
+                                    <div class="line-pictures">
                                             
                                         <div class="big-card">
                                             <a href="#">
@@ -252,7 +252,7 @@
                                                 Afficher plus
                                             </a>
                                         </h3>
-                                    </nav>            
+                                    </div>            
                             </section>
                         </div>
                     </div>       
@@ -264,7 +264,7 @@
                                         </h2>
                                         <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
                                     </div>
-                                    <nav class="populaires-cards">
+                                    <div class="populaires-cards">
                                         <a href="#">
                                         <article class="card">
                                             <img src="./images/hebergements/emile-guillemot.jpg" alt="Image de la chambre d'hôtel montrant un lit">
@@ -340,7 +340,7 @@
                                             </div>
                                         </article>
                                         </a>
-                                    </nav>
+                                    </div>
                                 </section>          
                             </div>
                 </div>            
@@ -350,7 +350,7 @@
                             <h2 class="title-activity2">
                                 Activités à Marseille
                             </h2>
-                            <nav class="line-activity">
+                            <div class="line-activity">
                                 <div class="activity-cards">
                         <a href="#">
                             <img src="./images/activites/reno-laithienne.jpg" alt="Image du vieux port" class="activity-picture">
@@ -386,7 +386,7 @@
                             </p>
                         </a>
                                 </div>
-                            </nav>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -394,7 +394,7 @@
         </div>
         <footer>
             <div class="bottom-page">
-                <nav class="text-bottom">
+                <div class="text-bottom">
                     <div class="text-left">
                         <p class="bold police">
                             À propos
@@ -445,7 +445,7 @@
                         </a>
                         </p>
                     </div>
-                </nav>
+                </div>
             </div>
         </footer>
     </body>
