@@ -430,7 +430,7 @@ a{
 }
 .activity-picture {
     object-fit: cover;
-    width: 297.5px;
+    width: 304px;
     height: 380px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px
@@ -510,7 +510,7 @@ a{
         margin-top: -15px;
     }
     .populaires-cards .card {
-        width: 32vw;
+        width: 260px;
     }
     .populaires-cards .card-title {
         font-size: 14px;
@@ -559,6 +559,8 @@ a{
     .logo_Booki{
         margin-top: 30px;
         margin-left: 145px;
+        display: flex;
+        justify-content: center;
     }
     .link-section{
         color: black;
@@ -600,6 +602,7 @@ a{
     }
     .barre_recherche_localisation {
         align-items:flex-start;
+        margin-right: 3vw;
     }
     .logo-local{
         width: 14px;
@@ -669,12 +672,13 @@ a{
         height: 30px;
         align-items:center;
         padding: 8px;
-        width: 145px;
+        width: 38vw;
         margin: 0px;
         margin-bottom: 10px;
+        margin-left: 5px;
       }
       .filter-button:nth-child(4) {
-        width: 145px;
+        width: 38vw;
     }
     .filter-contenant {
         font-size: 14px;
@@ -748,7 +752,7 @@ a{
         left: 10px;
     }
     .room-picture{
-        width: 325px;
+        width: 90vw;
         height: 124px;
         box-sizing: border-box;
     }
@@ -756,7 +760,7 @@ a{
         margin-bottom: 15px;
         flex: 1;
         display: flex;
-        width: 335px;
+        width: 90vw;
         height: 207.25px;
         box-sizing: border-box;
         box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
@@ -794,6 +798,7 @@ a{
         border-top-right-radius: 0px;
         border-bottom-left-radius: 0px;
         border-bottom-right-radius: 0px;
+        width: 105vw;
     }
     .populaires-cards{
         flex-direction: column;
@@ -819,12 +824,12 @@ a{
         flex-direction: column;
         justify-content: space-between;
         display: flex;
-        margin-left: 0px;
+        margin-left: -4px;
         margin-bottom: 0px;
         margin-top: 60px;
     }
     .activity-cards{
-        width: 315px;
+        width: 87vw;
         height: 200px;
         margin-bottom: 1px;
         position: relative;
@@ -839,7 +844,7 @@ a{
         filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.1));
     }
     .activity-picture{
-        width: 315px;
+        width: 87vw;
         height: 141px;
     }
     .title-activity2{
@@ -858,7 +863,7 @@ a{
         align-items: flex-start;
         padding: 30px;
         gap: 50px;
-        width: 375px;
+        width: 110vw;
         height: 461px;
         margin-left: -20px;
     }
