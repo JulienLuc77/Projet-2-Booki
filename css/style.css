@@ -9,11 +9,17 @@
     --filter-bg-color: #DEEBFF;
 }
 
+body {
+  margin: 0;
+}
+
 /****** Heading *********/
 header {
     display: flex;
     justify-content: space-between;
-    width: 98.5vw;
+}
+.image_container {
+  margin-top: 20px;
 }
 .logo_Booki {
     width: 61.09px;
@@ -24,7 +30,8 @@ header {
 .boutons_menu {
     display: flex;
     align-items: center;
-    padding-right: 16px;
+    justify-content: space-between;
+    width: 20%;
 }
 .link-menu {
     margin-top: 8px;
@@ -233,7 +240,7 @@ a{
     max-width: 1440px;
     box-sizing: border-box;
     min-width: 320px;
-    margin: 8px auto;
+    margin-bottom: 0;
     margin-left: auto;
     margin-right: auto;
 }
@@ -417,7 +424,6 @@ a{
     border-radius: 20px;
     flex: none;
     order: 0;
-    flex-grow: 1;
     background-color: white;
     border-radius: 20px;
     padding: 0px;
@@ -430,7 +436,7 @@ a{
 }
 .activity-picture {
     object-fit: cover;
-    width: 304px;
+    width: 297.5px;
     height: 380px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px
@@ -444,9 +450,7 @@ a{
 }
 /************* Bottom Page ********/
 .bottom-page {
-    position: absolute;
     background-color: #F2F2F2;
-    width: 1340px;
     height: 163px;
     margin-top: 65px;
     margin-left: 5px;
@@ -457,7 +461,6 @@ a{
     position: absolute;
 }
 .text-left { 
-    margin-bottom: 50px;
     margin-left: 20px;
     margin-top: -20px   
 }
@@ -475,18 +478,18 @@ a{
     .hebergements-and-populaires {
         flex-direction: column;
     }
-    
     .hebergements {
         width: 900px;
         height: 611.5px;
     }
-    .line-pictures{
-        margin-right: -39px;
-        margin-left: -10px;
-    }
+    .boutons_menu {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 25%;
+  }
     .big-card{
       margin-top: 0px;
-      margin-right: 36px;
       margin-bottom: 30px;
     }
     .display-link{
@@ -529,23 +532,34 @@ a{
         height: 200px;
     }
     .line-activity{
-        margin-left: 15vw;
+        margin-left: 12vw;
+    }
+    .text-left{
+        padding-right: 15vw;
     }
     .text-between{
-        margin-left: 190px;
+        margin-left:0;
+        padding-right: 20vw;
     }
     .text-right{
-        margin-left: 190px;
+        margin-left:0;
+    }
+    .bottom-page{
+        height: 20vh;
+        width: 110vw;
     }
     }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+    header {
+      display: block;
+    }
     /******** Heading ********/
     .main-container{
         width: 100%;
         max-width: 767.98px;
-        margin: 5px;
+        padding: 0 5px;
     }
     .body{
         display: flex;
@@ -556,42 +570,48 @@ a{
         position: absolute;
         height: 4127.52px;
     }
-    .logo_Booki{
-        margin-top: 30px;
-        margin-left: 145px;
-        display: flex;
-        justify-content: center;
+    .image_container {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      position: relative;
     }
     .link-section{
         color: black;
-        position: relative;
     }
     .link-section::after{
         content: "";
         position: absolute;
-        left: 0;
+        left: -5px;
         bottom: -15px;
-        width: 50vw;
+        width: 51vw;
         height: 2px;
-        background-color:#F2F2F2;
-        margin-left: -48px;
+        background-color:#f2f2f2;
     }
     .link-section:active{
         color: #0065FC;
     }
+    .link-section:active::after{
+        background-color: #0065FC;
+    }
     .link-menu{
-        left: -58vw;
-        margin-top: 79px;
+        margin-top: 35px;
         font-size: 16px;
+        margin-left: 0;
+        text-align: center;
         position: relative;
+        width: 50%;
+    }
+    .link-menu::after {
+      display: none;
     }
     .link-menu:active{
         color: #0065FC;
     }
     .boutons_menu {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 30px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
     }
     .titre_principal{
         font-size:22px;
@@ -599,6 +619,7 @@ a{
     }
     .subtitle{
         font-size: 16px;
+        width: auto;
     }
     .barre_recherche_localisation {
         align-items:flex-start;
@@ -779,7 +800,7 @@ a{
 
     .title-marseille{
         flex-wrap: nowrap;
-        width: 200%;
+        width: 110%;
         font-size: 22px;
         margin-left: -25px;
         margin-top: 70px;
@@ -788,7 +809,7 @@ a{
         margin-top: -60px;
         position: relative;
         height: 1px;
-        width: 80vw;
+        width: auto !important;
     }
     .hebergements-and-populaires{
         flex-direction:column-reverse;
@@ -863,7 +884,7 @@ a{
         align-items: flex-start;
         padding: 30px;
         gap: 50px;
-        width: 110vw;
+        width: auto;
         height: 461px;
         margin-left: -20px;
     }
@@ -872,7 +893,7 @@ a{
     }
     .text-between{
         margin-left: 10px;
-        margin-top: -15px;
+        margin-top: 30px;
     }
     .text-right{
         margin-left: 10px;
