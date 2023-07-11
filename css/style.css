@@ -350,7 +350,6 @@ a{
 }
 .display-link {
     font-size: 18px;
-    margin-right: 700px;
     margin-top: 30px;
 }
 /****** Populaires ***********/
@@ -474,35 +473,127 @@ a{
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
-@media (min-width: 770px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .hebergements-and-populaires {
         flex-direction: column;
     }
     .hebergements {
-        width: 900px;
+        width: 100vw;
         height: 611.5px;
+    }
+    .titre_principal{
+        font-size: 20px;
     }
     .boutons_menu {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      width: 25%;
+      width: 29vw;
   }
+    .logo-money {
+        font-size: 17px 
+    }
+    .logo-person {
+        font-size: 18px;
+    }
+    .heart-logo {
+        font-size: 17px;
+    }
+    .fire-logo {
+        font-size: 17px;
+    }
+    .link-section{
+        margin-left: -40px;
+        font-size: 15px;
+    }
+    .text-information{
+        font-size: 15px;
+    }
+    .filter-contenant{
+        font-size: 14px;
+    }
+    .word-filter{
+        position: absolute;
+        margin-top: 0px;
+    }
     .big-card{
-      margin-top: 0px;
-      margin-bottom: 30px;
+       width: 27vw;
+       margin: 0 10px;
+       margin-bottom: 25px;
+    }
+    .room-picture {
+        width: 27vw;
+    }
+    .container{
+        margin-top: 30px;
+    }
+    .line-pictures{
+        margin-left: -7px;
     }
     .display-link{
-        margin-top: 10px;
+        margin-top: 15px;
     }
     .filter-button:nth-child(4) {
-        width: 160px;
+        width: 137px;
     }
     .logo-money{
         margin-right: -5px;
     }
+    .logo-local {
+      font-size:18px
+  }
+  .color-square {
+      width: 5.5vw;
+      height: 45px;
+      background-color:#F2F2F2; 
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .color-square-2 {
+      width: 15vw;
+      height: 45px;
+      background-color:#0065FC; 
+      border-top-right-radius: 15px;
+      border-bottom-right-radius: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  .search-container input[type="text"] {
+      justify-content: center;
+      width: 180px;
+      height: 43px;
+      background-color: #ffffff; 
+      border: 1px solid #F2F2F2;
+      padding: 0px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 24px;
+      font-size: 17px;
+      outline: none;
+  }
+  .search-container2{
+      font-size: 16px;
+      color: black;
+      text-align: center;
+  }
+  .barre_recherche_localisation {
+      display: flex;
+      align-items:flex-start;
+      margin-bottom: 30px;
+      margin-top: 30px;
+  }
+  .word-search {
+      color: white;
+      font-size: 16px;
+      display: block;
+  }
     .populaires {
-        width: 900px;
+        width: 100vw;
         margin-top: 50px;
         height: auto;
     }
@@ -513,7 +604,7 @@ a{
         margin-top: -15px;
     }
     .populaires-cards .card {
-        width: 260px;
+        width: 28.5vw;
     }
     .populaires-cards .card-title {
         font-size: 14px;
@@ -521,18 +612,32 @@ a{
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+    .populaires-cards{
+        margin: 0px;
+        margin-left: -5px;
+    }
     .activity-cards{
-        width: 193.5px;
-        height: 270px;
+        width: 21vw;
+        height: 260px;
         box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
         filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.1));
     }
     .activity-picture{
-        width: 193.5px;
+        width: 21vw;
         height: 200px;
     }
+    .title-activity{
+        font-size: 15px;
+        margin-left: 15px;
+    }
     .line-activity{
-        margin-left: 12vw;
+        margin-left: -2px;
+    }
+    .setting{
+        margin-top: 10px;
+    }
+    .big{
+        font-size: 17px;
     }
     .text-left{
         padding-right: 15vw;
@@ -544,9 +649,12 @@ a{
     .text-right{
         margin-left:0;
     }
+    .text-bottom{
+       font-size: 15px;
+    }
     .bottom-page{
         height: 20vh;
-        width: 110vw;
+        width: 99vw;
     }
     }
 
@@ -838,7 +946,7 @@ a{
         position: relative;
     }
     .activity2{
-        margin-top: 210vh;
+        margin-top: 1700px;
         position: relative;
     }
     .line-activity{
